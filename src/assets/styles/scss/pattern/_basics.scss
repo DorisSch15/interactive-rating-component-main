@@ -1,2 +1,154 @@
 @import "./colors";
 @import "./font";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overallwrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: $extremdarkblue;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choose,
+.thankyou {
+    width: 412px;
+    height: 416px;
+    background-image: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    
+    border: 1px solid radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+}
+
+.choose {
+
+    &__star {
+        height: 47px;
+        width: 47px;
+        border: 1px solid $darkblue;
+        border-radius: 50%;
+        background-color: $darkblue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__title {
+        padding-top: 30px;
+
+        color: $white;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35.45px;
+    };
+
+    &__main {
+        padding-top: 7px;
+        padding-bottom: 24px;
+        
+        color: $lightgrey;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__selection {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+
+        &-n {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $darkblue;
+            border-radius: 50%;
+            color: $mediumgrey;
+            background-color: $darkblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: $mediumgrey;
+                color: $white;
+            }
+        };
+    };
+
+    &__btn {
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        width: 100%;
+        height: 45px;
+        background-color: $primary-orange;
+        color: $white;
+        border: none;
+        border-radius: 22.5px;
+
+        font-weight: 700;
+        line-height: 18.99px;
+        text-transform: uppercase;
+    }
+};
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__selection {
+        width: 192px;
+        height: 32px;
+        
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $darkblue;
+        border-radius: 22.5px;
+
+        font-weight: 400;
+        line-height: 24px;
+        color: $primary-orange;
+    }
+
+    &__h1 {
+        color: $white;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35.45px;
+    }
+
+    &__text {
+        margin-top: 7px;
+
+        font-weight: 400;
+        line-height: 24px;
+        color: $lightgrey;
+        text-align: center;
+    }
+}
