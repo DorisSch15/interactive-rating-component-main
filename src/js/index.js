@@ -1,5 +1,6 @@
 import '../assets/styles/scss/main.scss';
 
+
 let btnSubmit = document.querySelector('.choose__btn');
 let selection = document.querySelector('.choose__selection');
 let numberSelection = document.querySelector('.choose__selection-n');
@@ -12,7 +13,7 @@ selection.addEventListener('click', zahlAusgeben);
 btnSubmit.addEventListener('click', showThankYou)
 
 function zahlAusgeben(e) {
-    if (e.target && e.target.matches('div')){
+    if (e.target && e.target.matches('div.choose__selection-n')){
         number = e.target.innerText;
         e.target.classList.add('activ');
     };
