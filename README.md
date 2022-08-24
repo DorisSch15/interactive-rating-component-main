@@ -1,8 +1,8 @@
 # Frontend Mentor - Interactive rating component
 
->>>> Be informed, I just did the desktop version. I wanted to start a webpack project where I could test my rusty HTML & CSS skills and warm up to javascript.
+# >> Be informed, I just did the desktop version. I wanted to start a webpack project where I could test my rusty HTML & CSS skills and warm up to javascript.
 
-[Link to my solutions page](https://fm22-interactive-rating-component.netlify.app/) 
+[Link to my solutions page](https://fm22-interactive-rating-component.netlify.app/){:target="_blank"}
 ______________________________
 
 ![Design preview for the Interactive rating component coding challenge](./../interactive-rating-component-main/src/assets/design/desktop-design.jpg)
