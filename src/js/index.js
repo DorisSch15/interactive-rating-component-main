@@ -12,10 +12,19 @@ let number
 selection.addEventListener('click', zahlAusgeben);
 btnSubmit.addEventListener('click', showThankYou)
 
-function zahlAusgeben(e) {
+// delegate hinzufügen/wegnehmen // entfernen / neu aufbauen
+// foreach -> müsste html im js hinzugefügt werden, was nicht unbedingt besser ist
+// foreach -> müsste mit document.queryselector alle "__selection-n" genommen werden und dann 5 event listener gesetzt werden
+// -> matches ist nicht unbedingt die falsche Lösung
+
+function zahlAusgeben(e) { // gefühl gehabt, müsste delegate verwenden...
     if (e.target && e.target.matches('div.choose__selection-n')){
         number = e.target.innerText;
-        e.target.classList.add('activ');
+        const active = document.querySelector('.active');
+        if (active){
+            active.classList.remove('active');
+        }
+        e.target.classList.add('active');
     };
 };
 
